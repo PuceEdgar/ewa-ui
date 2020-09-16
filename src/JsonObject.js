@@ -31,26 +31,10 @@ export const JsonObject = (props) => {
     } else {
       return (
         <div>
-          {/* <button
-            class="btn btn-primary"
-            type="button"
-            data-toggle="collapse"
-            data-target={`#${key}`}
-            aria-expanded="false"
-            aria-controls={key}
-          >
-            {key}
-          </button> */}
           <h4>{key}</h4>
           <div className="container m-3">
             <JsonObject value={value[key]} />
           </div>
-
-          {/* <div className="collapse" id={key}>
-            <div className="card card-body">
-              
-            </div>
-          </div> */}
         </div>
       );
     }

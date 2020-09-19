@@ -1,0 +1,525 @@
+{
+  "transaction": [
+    {
+      "transactionnumber": "06504-740737-00000759593",
+
+      "date_transaction": "2020-05-25T00:00:00",
+
+      "transmode_code": "KOVER",
+
+      "amount_local": "17500",
+
+      "t_from_my_client": {
+        "from_funds_code": "IRREL",
+
+        "from_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56091054465",
+
+          "currency_code": "SEK",
+
+          "account_name": "TRANSAKTIONSKONTO HBG",
+
+          "iban": "SE0750000000056091054465",
+
+          "client_number": "56091054465",
+
+          "personal_account_type": "BKTO",
+
+          "t_entity": {
+            "name": "EXCHANGEHUSET HATAM NAJI AB UB",
+
+            "incorporation_legal_form": "ANNAN",
+
+            "incorporation_number": "0032507816",
+
+            "addresses": {
+              "address": {
+                "address_type": "VUA",
+
+                "address": "GUSTAV ADOLFS TORG 2",
+
+                "city": "HELSINGBORG",
+
+                "zip": "25225",
+
+                "country_code": "SE"
+              }
+            },
+
+            "incorporation_country_code": "SE"
+          },
+
+          "opened": "2011-11-30T00:00:00",
+
+          "balance": "1411287.21",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "from_country": "SE"
+      },
+
+      "t_to": {
+        "to_funds_code": "IRREL",
+
+        "to_account": {
+          "swift": "Saknas",
+
+          "non_bank_institution": "false",
+
+          "account": "821499348050593",
+
+          "client_number": "821499348050593",
+
+          "personal_account_type": "OKANT"
+        },
+
+        "to_country": "SE"
+      },
+
+      "comments": "Fcrm"
+    },
+
+    {
+      "transactionnumber": "06504-866901-00000682450",
+
+      "date_transaction": "2020-07-24T00:00:00",
+
+      "transmode_code": "KOVER",
+
+      "amount_local": "17500",
+
+      "t_from_my_client": {
+        "from_funds_code": "IRREL",
+
+        "from_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56091054465",
+
+          "currency_code": "SEK",
+
+          "account_name": "TRANSAKTIONSKONTO HBG",
+
+          "iban": "SE0750000000056091054465",
+
+          "client_number": "56091054465",
+
+          "personal_account_type": "BKTO",
+
+          "t_entity": {
+            "name": "EXCHANGEHUSET HATAM NAJI AB UB",
+
+            "incorporation_legal_form": "ANNAN",
+
+            "incorporation_number": "0032507816",
+
+            "addresses": {
+              "address": {
+                "address_type": "VUA",
+
+                "address": "GUSTAV ADOLFS TORG 2",
+
+                "city": "HELSINGBORG",
+
+                "zip": "25225",
+
+                "country_code": "SE"
+              }
+            },
+
+            "incorporation_country_code": "SE"
+          },
+
+          "opened": "2011-11-30T00:00:00",
+
+          "balance": "1411287.21",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "from_country": "SE"
+      },
+
+      "t_to_my_client": {
+        "to_funds_code": "IRREL",
+
+        "to_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56090184446",
+
+          "currency_code": "SEK",
+
+          "account_name": "Undefined",
+
+          "iban": "SE3050000000056090184446",
+
+          "client_number": "56090184446",
+
+          "personal_account_type": "BKTO",
+
+          "signatory": {
+            "t_person": {
+              "gender": "M",
+
+              "first_name": "MAJID",
+
+              "last_name": "AL-SAHI",
+
+              "birthdate": "1968-07-01T00:00:00",
+
+              "alias": "N",
+
+              "ssn": "196807018012",
+
+              "residence": "SE",
+
+              "addresses": {
+                "address": {
+                  "address_type": "VUA",
+
+                  "address": "MÄSTAREGATAN 36",
+
+                  "city": "HELSINGBORG",
+
+                  "zip": "25661",
+
+                  "country_code": "SE"
+                }
+              },
+
+              "identification": {
+                "type": "KORKO",
+
+                "number": "SE205238033",
+
+                "issue_country": "SE"
+              }
+            },
+
+            "role": "KONTO"
+          },
+
+          "opened": "2008-10-10T00:00:00",
+
+          "balance": "19507.89",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "to_country": "SE"
+      },
+
+      "comments": "Fcrm"
+    },
+
+    {
+      "transactionnumber": "06504-866901-00000682450",
+
+      "date_transaction": "2020-07-24T00:00:00",
+
+      "transmode_code": "KOVER",
+
+      "amount_local": "17500",
+
+      "t_from_my_client": {
+        "from_funds_code": "IRREL",
+
+        "from_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56091054465",
+
+          "currency_code": "SEK",
+
+          "account_name": "TRANSAKTIONSKONTO HBG",
+
+          "iban": "SE0750000000056091054465",
+
+          "client_number": "56091054465",
+
+          "personal_account_type": "BKTO",
+
+          "t_entity": {
+            "name": "EXCHANGEHUSET HATAM NAJI AB UB",
+
+            "incorporation_legal_form": "ANNAN",
+
+            "incorporation_number": "0032507816",
+
+            "addresses": {
+              "address": {
+                "address_type": "VUA",
+
+                "address": "GUSTAV ADOLFS TORG 2",
+
+                "city": "HELSINGBORG",
+
+                "zip": "25225",
+
+                "country_code": "SE"
+              }
+            },
+
+            "incorporation_country_code": "SE"
+          },
+
+          "opened": "2011-11-30T00:00:00",
+
+          "balance": "1411287.21",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "from_country": "SE"
+      },
+
+      "t_to_my_client": {
+        "to_funds_code": "IRREL",
+
+        "to_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56090184446",
+
+          "currency_code": "SEK",
+
+          "account_name": "Undefined",
+
+          "iban": "SE3050000000056090184446",
+
+          "client_number": "56090184446",
+
+          "personal_account_type": "BKTO",
+
+          "signatory": {
+            "t_person": {
+              "gender": "M",
+
+              "first_name": "MAJID",
+
+              "last_name": "AL-SAHI",
+
+              "birthdate": "1968-07-01T00:00:00",
+
+              "alias": "N",
+
+              "ssn": "196807018012",
+
+              "residence": "SE",
+
+              "addresses": {
+                "address": {
+                  "address_type": "VUA",
+
+                  "address": "MÄSTAREGATAN 36",
+
+                  "city": "HELSINGBORG",
+
+                  "zip": "25661",
+
+                  "country_code": "SE"
+                }
+              },
+
+              "identification": {
+                "type": "KORKO",
+
+                "number": "SE205238033",
+
+                "issue_country": "SE"
+              }
+            },
+
+            "role": "KONTO"
+          },
+
+          "opened": "2008-10-10T00:00:00",
+
+          "balance": "19507.89",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "to_country": "SE"
+      },
+
+      "comments": "Fcrm"
+    },
+
+    {
+      "transactionnumber": "06504-878938-00000287790",
+
+      "date_transaction": "2020-07-30T00:00:00",
+
+      "transmode_code": "KOVER",
+
+      "amount_local": "10000",
+
+      "t_from_my_client": {
+        "from_funds_code": "IRREL",
+
+        "from_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56091060910",
+
+          "currency_code": "SEK",
+
+          "account_name": "TRANSAKTIONSKONTO GBG",
+
+          "iban": "SE1050000000056091060910",
+
+          "client_number": "56091060910",
+
+          "personal_account_type": "BKTO",
+
+          "t_entity": {
+            "name": "EXCHANGEHUSET HATAM NAJI AB",
+
+            "incorporation_legal_form": "AB",
+
+            "incorporation_number": "5568905557",
+
+            "addresses": {
+              "address": {
+                "address_type": "VUA",
+
+                "address": "GUSTAV ADOLFS TORG 2",
+
+                "city": "HELSINGBORG",
+
+                "zip": "25219",
+
+                "country_code": "SE"
+              }
+            },
+
+            "incorporation_country_code": "SE"
+          },
+
+          "opened": "2013-05-27T00:00:00",
+
+          "balance": "397384.78",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "from_country": "SE"
+      },
+
+      "t_to_my_client": {
+        "to_funds_code": "IRREL",
+
+        "to_account": {
+          "institution_name": "Skandinaviska Enskilda Banken AB",
+
+          "swift": "ESSESESS",
+
+          "non_bank_institution": "false",
+
+          "branch": "5609",
+
+          "account": "56091054465",
+
+          "currency_code": "SEK",
+
+          "account_name": "TRANSAKTIONSKONTO HBG",
+
+          "iban": "SE0750000000056091054465",
+
+          "client_number": "56091054465",
+
+          "personal_account_type": "BKTO",
+
+          "t_entity": {
+            "name": "EXCHANGEHUSET HATAM NAJI AB UB",
+
+            "incorporation_legal_form": "ANNAN",
+
+            "incorporation_number": "0032507816",
+
+            "addresses": {
+              "address": {
+                "address_type": "VUA",
+
+                "address": "GUSTAV ADOLFS TORG 2",
+
+                "city": "HELSINGBORG",
+
+                "zip": "25225",
+
+                "country_code": "SE"
+              }
+            },
+
+            "incorporation_country_code": "SE"
+          },
+
+          "opened": "2011-11-30T00:00:00",
+
+          "balance": "1411287.21",
+
+          "date_balance": "2020-08-11T00:00:00",
+
+          "status_code": "AKTIV"
+        },
+
+        "to_country": "SE"
+      },
+
+      "comments": "Fcrm"
+    }
+  ]
+}

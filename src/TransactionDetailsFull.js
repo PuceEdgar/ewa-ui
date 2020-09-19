@@ -5,13 +5,11 @@ export const DetailRow = (props) => {
   const [read, setRead] = useState(true);
   const [field, setField] = useState(value);
 
-  function editField(event) {
+  function editField() {
     setRead(false);
   }
 
   function handleChange(event) {
-    const { name, value } = event.target;
-
     setField(event.target.value);
   }
 
@@ -28,14 +26,11 @@ export const DetailRow = (props) => {
           name={name}
           id={name}
           value={field}
-          onChange={handleChange}
+          onChange={(e) => handleChange(e)}
         />
       </div>
       <div className="col-sm-4">
-        <button
-          className="btn btn-outline-warning"
-          onClick={(e) => editField(e)}
-        >
+        <button className="btn btn-outline-warning" onClick={editField}>
           Edit
         </button>
         <button className="btn btn-outline-danger">Delete</button>
@@ -44,34 +39,24 @@ export const DetailRow = (props) => {
   );
 };
 
-export const JsonObject = (props) => {
+export const TransactionDetailsFull = (props) => {
   const { value } = props;
   const keys = Object.keys(value).map((key, i) => {
-    if (typeof value[key] === "object") {
+    if (typeof value[key] !== "object") {
+      return <DetailRow name={key} value={value[key]} />;
+    } else {
       return (
         <div>
-          <button
-            class="btn btn-outline-success"
-            type="button"
-            data-toggle="collapse"
-            data-target={`#${key}`}
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          >
-            {key}
-          </button>
-
-          <div className="collapse container m-3" id={key}>
-            <JsonObject value={value[key]} />
+          <h5>{key}: </h5>
+          <div className="container m-3" id={key}>
+            <TransactionDetailsFull value={value[key]} />
           </div>
         </div>
       );
-    } else {
-      return <DetailRow name={key} value={value[key]} />;
     }
   });
 
   return <>{keys}</>;
 };
 
-export default DetailRow;
+export default TransactionDetailsFull;

@@ -2,32 +2,28 @@ import React from "react";
 import { GetObjectDetails } from "./GetObjects";
 import { DetailRow } from "./TransactionDetailsFull";
 
-const Button = (props) => {
-  const { kid } = props;
-  return (
-    <button
-      className="btn btn-outline-success"
-      type="button"
-      data-toggle="collapse"
-      data-target={`#${kid}`}
-      aria-expanded="false"
-      aria-controls="collapseExample"
-    >
-      {kid}
-    </button>
-  );
-};
-
 const Link = (props) => {
-  const { kid } = props;
+  const { kid, num } = props;
+
+  let classDescription = "";
+  let selected = false;
+  if (kid === "transaction") {
+    classDescription = "nav-link active";
+    selected = true;
+  } else {
+    classDescription = "nav-link";
+    selected = false;
+  }
+
   return (
     <a
-      class="nav-link"
-      id={`${kid}-tab`}
-      data-toggle="tab"
-      href={`#${kid}`}
+      className={classDescription}
+      id={`v-pills-${kid}-tab-${num}`}
+      data-toggle="pill"
+      href={`#v-pills-${kid}-${num}`}
       role="tab"
-      aria-controls={kid}
+      aria-controls={`v-pills-${kid}-${num}`}
+      aria-selected={selected}
     >
       {kid}
     </a>
@@ -35,15 +31,22 @@ const Link = (props) => {
 };
 
 const Info = (props) => {
-  const { kid, value } = props;
+  const { kid, value, num } = props;
+  let classDescription = "";
+  if (kid === "transaction") {
+    classDescription = "tab-pane fade show active";
+  } else {
+    classDescription = "tab-pane fade";
+  }
+
   return (
     <div
-      class="tab-pane fade"
-      id={kid}
+      class={classDescription}
+      id={`v-pills-${kid}-${num}`}
       role="tabpanel"
-      aria-labelledby={`${kid}-tab`}
+      aria-labelledby={`v-pills-${kid}-tab-${num}`}
     >
-      test
+      <ShowValues values={value} />
     </div>
   );
 };
@@ -63,26 +66,42 @@ const ShowValues = (props) => {
 };
 
 const TransactionDetails = (props) => {
-  const { object } = props;
+  const { object, num } = props;
 
   const keyValuePair = GetObjectDetails(object);
 
-  const entries = Object.values(keyValuePair).map((entry, i) => {
+  const keys = Object.values(keyValuePair).map((entry, i) => {
     return Object.entries(entry).map((kvp, i) => {
-      const key = kvp[0];
-      const value = Object.values(kvp[1]);
-      return (
-        <div className="container m-3">
-          <Button kid={kvp[0]} />
-          <div className="collapse" id={key}>
-            <ShowValues key={i} values={value} />
-          </div>
-        </div>
-      );
+      return <Link kid={kvp[0]} num={num} key={i} />;
     });
   });
 
-  return <div>{entries}</div>;
+  const values = Object.values(keyValuePair).map((entry, i) => {
+    return Object.entries(entry).map((kvp, i) => {
+      const value = Object.values(kvp[1]);
+      return <Info kid={kvp[0]} value={value} num={num} key={i} />;
+    });
+  });
+
+  return (
+    <div className="row">
+      <div className="col-3">
+        <div
+          class="nav flex-column nav-pills"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          {keys}
+        </div>
+      </div>
+      <div className="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          {values}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default TransactionDetails;
